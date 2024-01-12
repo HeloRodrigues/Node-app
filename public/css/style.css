@@ -1,0 +1,105 @@
+body {
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 650px;
+    margin-inline: auto;
+    padding-inline: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+.main-content {
+   flex-grow: 1;
+}
+
+footer {
+   color: #888888;
+   border-top: 1px solid #eeeeee;
+   margin-block-start: 16px;
+   margin-block-end: 16px;
+}
+
+header {
+    margin-block-start: 16px;
+    margin-block-end: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-block-end: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+header a {
+   color: #888888;
+   margin-block-start: 16px;
+   text-decoration: none;
+}
+
+.profileImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-block-end: 16px;
+    margin-inline: auto;
+    object-fit: cover;
+
+}
+
+
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  border-radius: 3px;
+  width: 80%;
+
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background-color: #888888;
+  color: white;
+  padding: 8px;
+  border-radius: 3px;
+  margin-block-start: 16px;
+  width: 60%;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  margin-inline: 80px
+}
+
+button:hover {
+  background-color: #bebebe;
+  border: #bebebe;
+  color: black;
+  transition: 0.5s
+}
+
+.headline {
+    margin-block-end: 8px;
+}
+
+.result {
+  margin-block: 80px;
+}
+
+#message-1 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#message-2 {
+  font-weight: 300;
+  font-size: 18px;
+}
