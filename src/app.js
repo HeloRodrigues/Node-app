@@ -7,6 +7,8 @@ import geocode from "./utils/geocode.js";
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 //Create a const using fileURLToPath(import.meta.url) to get the current module's filename.
 // The method bellow is used, because I'm using the module type in the json file.
 
@@ -91,6 +93,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
