@@ -13,9 +13,7 @@ weatherForm.addEventListener("submit", async (e) => {
   message1.textContent = "Loading...";
 
   try {
-    const response = await fetch(
-      `https://weather-3mlj.onrender.com/weather?address=${location}`
-    );
+    const response = await fetch(`/weather?address=${location}`);
 
     if (!response.ok) {
       message1.textContent = "";
