@@ -10,9 +10,8 @@ const geocode = (address, callback) => {
   )}.json?access_token=${access_token}&limit=1`;
 
   request({ url, json: true }, (error, { body }) => {
-    console.log({
-      body,
-    });
+    console.log("🚀 ~ request ~ body:", { body });
+
     const locationLatAndLon = {
       latitude: body.features[0].center[1],
       longitude: body.features[0].center[0],
