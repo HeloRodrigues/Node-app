@@ -2,6 +2,7 @@ import request from "request";
 import "dotenv/config";
 
 const access_token = process.env.ACCESS_TOKEN;
+console.log("🚀 ~ access_token:", access_token);
 
 const geocode = (address, callback) => {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
